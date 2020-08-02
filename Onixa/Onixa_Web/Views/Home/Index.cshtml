@@ -13,63 +13,25 @@
 
                     <div class="product-filter">
                         <div class="row">
-                            <div class="col-lg-1 col-md-1 col-sm-12">
-                                <h5 class="control-label">Sort By:</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-auto col-sm-12">
-                                <select name="price-type" id="input-sort" class="form-control">
-                                    <option value="">Default</option>
-                                    <option value="">Name (A - Z)</option>
-                                    <option value="">Name (Z - A)</option>
-                                    <option value="">Price (Low > High)</option>
-                                    <option value="">Price (High > Low)</option>
-                                    <option value="">Rating (Lowest)</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-1 col-md-1 col-sm-12">
-                                <h5 class="control-label">Sort By:</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-auto col-sm-12">
-                                <select name="price-type" id="input-sort" class="form-control">
-                                    <option value="">Default</option>
-                                    <option value="">Name (A - Z)</option>
-                                    <option value="">Name (Z - A)</option>
-                                    <option value="">Price (Low > High)</option>
-                                    <option value="">Price (High > Low)</option>
-                                    <option value="">Rating (Lowest)</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-1 col-md-1 col-sm-12">
-                                <h5 class="control-label">Sort By:</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-auto col-sm-12">
-                                <select name="price-type" id="input-sort" class="form-control">
-                                    <option value="">Default</option>
-                                    <option value="">Name (A - Z)</option>
-                                    <option value="">Name (Z - A)</option>
-                                    <option value="">Price (Low > High)</option>
-                                    <option value="">Price (High > Low)</option>
-                                    <option value="">Rating (Lowest)</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-1 col-md-1 col-sm-12">
-                                <h5 class="control-label">Sort By:</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-auto col-sm-12">
-                                <select name="price-type" id="input-sort" class="form-control">
-                                    <option value="">Default</option>
-                                    <option value="">Name (A - Z)</option>
-                                    <option value="">Name (Z - A)</option>
-                                    <option value="">Price (Low > High)</option>
-                                    <option value="">Price (High > Low)</option>
-                                    <option value="">Rating (Lowest)</option>
-                                </select>
-                            </div>
-
+                            @for (int i = 0; i < 4; i++)
+                            {
+                                <div class="col-lg-1 col-md-1 col-sm-12">
+                                    <h5 class="control-label">Sort By:</h5>
+                                </div>
+                                <div class="col-lg-2 col-md-auto col-sm-12">
+                                    <select name="price-type" id="input-sort" class="form-control">
+                                        <option value="">Default</option>
+                                        <option value="">Name (A - Z)</option>
+                                        <option value="">Name (Z - A)</option>
+                                        <option value="">Price (Low > High)</option>
+                                        <option value="">Price (High > Low)</option>
+                                        <option value="">Rating (Lowest)</option>
+                                    </select>
+                                </div>
+                            }
                         </div>
-                        <div class="row"></div>
+
+                       
                         <div id="shop-all" class="row">
                             <!-- Product Item #1 -->
                             @for (int i = 0; i < 20; i++)
@@ -94,12 +56,12 @@
 
                                 </div>
                             }
-                           
+
                             <!-- .product-item end -->
                         </div>
                     </div>
 
-                    <!-- /.col-md-3 -->
+                    
                 </div>
             </div>
     </section>
