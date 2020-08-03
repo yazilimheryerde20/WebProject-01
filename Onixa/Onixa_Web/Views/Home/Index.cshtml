@@ -15,17 +15,17 @@
                         <div class="row">
                             @for (int i = 0; i < 4; i++)
                             {
-                                <div class="col-lg-1 col-md-auto col-sm-12">
-                                    <h5 class="control-label">Sort By:</h5>
-                                </div>
-                                <div class="col-lg-2 col-md-auto col-sm-12">
-                                    <select name="price-type" id="input-sort" class="form-control">
+                                <div class="col-lg-3 col-md-5 col-sm-12">
+                                
+                                    <h5>Sort By:</h5>
+                                
+                                    <select class="wide nice-select small">
                                         <option value="">Default</option>
                                         <option value="">Name (A - Z)</option>
                                         <option value="">Name (Z - A)</option>
                                         <option value="">Price (Low > High)</option>
                                         <option value="">Price (High > Low)</option>
-                                        <option value="">Rating (Lowest)</option>
+                                        <option value="">Rating (Lowest sdsdsdsdsdsds sds)</option>
                                     </select>
                                 </div>
                             }
@@ -36,9 +36,12 @@
                             <!-- Product Item #1 -->
                             @for (int i = 0; i < 8; i++)
                             {
-                                <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best">
+                                <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-sale">
                                     <div class="product-img">
                                         <img src="~/img/web_img/gorsele_erisilemiyor.jpg" alt="product">
+                                        <div class="product-sale">
+                                            YENİ
+                                        </div>
                                         <div class="product-hover">
                                             <div class="product-cart">
                                                 <a class="btn btn-secondary btn-block" href="#">Add To Cart</a>
@@ -47,17 +50,19 @@
                                     </div>
                                     <!-- .product-img end -->
                                     <div class="product-bio">
-                                        <h5>
-                                            <a href="#">CST/Berger yazılım sensin yazılım her yerde olmalojkj 215</a>
-                                        </h5>
-                                        <p class="product-price">$68.00</p>
+                                        <h4>
+                                            <a href="#">Titan Measures</a>
+                                        </h4>
+                                        <p class="product-price">
+                                            <span>$40.00</span>
+                                            $32.00</p>
                                     </div>
                                     <!-- .product-bio end -->
-
+    
                                 </div>
+                                <!-- .product-item end -->
                             }
 
-                            <!-- .product-item end -->
                         </div>
                     </div>
 
