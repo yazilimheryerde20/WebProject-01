@@ -2,14 +2,6 @@
 	#SHOP
 \*------------------------------------*/
 
-h5 {
-           
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal !important;
-    color: #000;
-    -webkit-font-smoothing: antialiased;
-    
-}
 .product-num {
             padding-top: 12px;
             padding-bottom: 12px;
@@ -22,7 +14,12 @@ h5 {
             text-transform: uppercase;
             color: #5e5e5e;
         }
-        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: #A1CD39;
+            font-weight: bold;
+            margin: 0px 0px 15px;
+          }
         .product-options {
             margin-bottom: 30px;
         }

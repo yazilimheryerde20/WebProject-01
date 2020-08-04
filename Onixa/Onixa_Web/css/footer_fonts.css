@@ -129,11 +129,8 @@ h5,
 h6 {
   line-height: 1.2em;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  color: #A1CD39;
-  font-weight: 700;
-  margin: 0px 0px 15px;
+h5{
+  color: black;
 }
 h1 {
   font-size: 32.437px;
