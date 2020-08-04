@@ -115,37 +115,6 @@
   border-color: #323335;
 }
 
-/*----------------------------*\
-	tags widget
-\*----------------------------*/
-
-.tags-widget ul li {
-  display: inline-block;
-  margin-right: 4px;
-  margin-bottom: 6px;
-}
-
-.tags-widget ul li a {
-  text-transform: uppercase;
-  display: block;
-  padding: 10px 15px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #97989b;
-  background-color: #323335;
-  border-radius: 2px;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.tags-widget ul li a:hover, .tags-widget ul li a:focus {
-  color: #fff !important;
-  background-color: #A1CD39;
-}
-
-/*----------------------------*\
-	galery widget
-\*----------------------------*/
 
 .galery-widget ul {
   margin: -2px -2px;

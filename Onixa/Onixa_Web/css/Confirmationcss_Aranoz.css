@@ -138,10 +138,7 @@ h3 {
   font-size: 24px;
 }
 
-/* line 105, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_elements.scss */
-h4 {
-  font-size: 18px;
-}
+
 
 /* line 109, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_elements.scss */
 h5 {
@@ -153,15 +150,7 @@ h6 {
   font-size: 14px;
 }
 
-/* line 117, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_elements.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.2em;
-}
+
 
 /* line 127, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_elements.scss */
 .typography h1,
