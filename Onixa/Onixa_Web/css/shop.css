@@ -710,9 +710,15 @@ font-size: 14px;
 .input-group{
     color:black;
 }
-.s_product_text a{
+.s_product_text .fiyat{
     color:#A1CD39;
     font-size: 25px;
     font-weight: normal;
     font-weight: bold;
+}
+.s_product_text .kdv{
+    color: #A1CD39;
+    font-size: 10px;
+    font-weight: normal;
+    font-weight: lighter;
 }
