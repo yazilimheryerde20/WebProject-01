@@ -188,6 +188,10 @@ p {
   color: white;
   font-weight: 300;
 }
+.s_product_text p{
+  color:black;
+  font-weight: bold;
+}
 /* line 4, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
 body {
   font-family: "Poppins", sans-serif;
