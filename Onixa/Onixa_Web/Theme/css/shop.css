@@ -652,6 +652,7 @@
         }
 .media-body h4{
     color:black;
+    font-weight: 500px;
 }
 .review_box h4{
     color:black;
@@ -672,4 +673,16 @@ font-size: 14px;
 }
 .s_product_text h2{
     color:#A1CD39;
+}
+.review_item p{
+    color:black;
+}
+.review_item h4{
+    font-size:14px;
+}
+.review_item h5{
+    font-size:16px;
+}
+.review_item a{
+    font-weight: bold;
 }
