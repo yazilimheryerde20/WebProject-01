@@ -1,13 +1,6 @@
 /**************** common css start ****************/
 
 
-
-
-
-
-.s_product_text h3{
-  color:black;
-}
 /* line 11, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
 .message_submit_form:focus {
   outline: none;
@@ -131,7 +124,6 @@ a:hover {
   text-decoration: none;
 }
 
-
 /* line 94, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
 h1,
 h2,
@@ -139,19 +131,16 @@ h3,
 h4,
 h5,
 h6 {
-  color:black;
+  color:#A1CD39;
   font-family: "Poppins", sans-serif;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 h3{
-  color:#A1CD39;
-}
-
-h5{
   color:black;
 }
+
 
 /* line 114, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
 h2 {

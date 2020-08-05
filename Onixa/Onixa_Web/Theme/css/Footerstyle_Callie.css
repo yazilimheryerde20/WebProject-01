@@ -10,19 +10,12 @@
 }
 
 #footer {
-  color: #A1CD39;
+  color: #97989b;
 }
 
 #footer a {
   color: white;
 }
-
-#footer h4{
-color:#A1CD39;
-}
-#footer h3{
-  color:#A1CD39;
-  }
 
 #footer a:hover, #footer a:focus {
   color: #A1CD39;
