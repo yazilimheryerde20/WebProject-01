@@ -33,8 +33,10 @@
 	padding: 40px 34px 0;
 	background: #f0f0f0;
 	border-radius: 27px;
-	overflow: hidden;
+	overflow-x: auto;
+	
 }
+
 
 .cart-table h3 {
 	font-weight: 700;
