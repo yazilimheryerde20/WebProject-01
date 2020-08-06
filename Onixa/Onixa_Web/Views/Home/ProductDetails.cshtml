@@ -86,15 +86,23 @@
                     <!--DETAYLAR FİNİSH!-->
                     <h4>AÇIKLAMA:</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <div class="card_area d-flex justify-content-between align-items-center">
+                    <div class="card_area">
                         <!--<div class="product_count" style="width: fit-content;">
-                            <span class="inumber-decrement"> <i class="fa fa-minus"></i></span>
-                            <input class="input-number" type="text" value="1" min="0" max="10">
-                            <span class="number-increment"> <i class="fa fa-plus"></i></span>
-                        </div>-->
-                        <div style="margin-top: 10px;"></div> <a href="#" class="btn_3">Sepete ekle</a>
+        <span class="inumber-decrement"> <i class="fa fa-minus"></i></span>
+        <input class="input-number" type="text" value="1" min="0" max="10">
+        <span class="number-increment"> <i class="fa fa-plus"></i></span>
+    </div>-->
+                        <div class="btn-group">
+                            <button type="button" title="Dismissible popover" class="btn btn-success btn-lg">Sepete Ekle</button>
+                            <button type="button" class="btn btn-warning btn-lg">Satıcıya Danış</button>
+                            <button type="button" class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Hemen Satın Al</button>
+                            
+                        </div>
+                        
+                        @*<div style="margin-top: 10px;"></div> <a href="#" class="btn_3">Sepete ekle</a>*@
+                       
                     </div>
                 </div>
             </div>
@@ -125,7 +133,6 @@
                                     ullamco laboris nisi ut aliquip ex ea commodo
                                 </p>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -151,9 +158,11 @@
                                 </div>
                                 <div class="col-md-12 text-right">
                                     <button type="submit" value="submit" class="btn_3">
-                                        Submit Now
+                                        Paylaş
                                     </button>
+                                   
                                 </div>
+                               
                             </form>
                         </div>
                     </div>
@@ -162,4 +171,16 @@
         </div>
     </div>
 </section>
+@section scripts{
+    <script type="text/javascript">
+        (function($) {
+            $(document).ready(function($) {
+                $('[data-toggle="popover"]').popover();
+               
+            });
+        })(jQuery);
+        
 
+
+    </script>
+}
