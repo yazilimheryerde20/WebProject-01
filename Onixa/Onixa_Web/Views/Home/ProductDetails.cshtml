@@ -19,7 +19,7 @@
                         @for (int i = 0; i < 5; i++)
                         {
                             <div data-thumb="../img/web_img/gorsele_erisilemiyor.jpg">
-                                <img id="urun" role="presentation" src="~/img/web_img/ac.jpg" />
+                                <img class="zoomImg" role="presentation" src="~/img/web_img/ac" />
                             </div>
                         }
                     </div>
@@ -197,7 +197,7 @@
         (function($) {
             $(document).ready(function($) {
                 $('[data-toggle="popover"]').popover();
-                $('#urun').zoom();
+               
             });
         })(jQuery);
        

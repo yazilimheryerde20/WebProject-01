@@ -4,9 +4,3 @@ C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.csproj.CoreCompileInputs.cache
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.dll
 C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.pdb
-C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\bin\Debug\Onixa.Entity.dll.config
-C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\bin\Debug\EntityFramework.dll
-C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\bin\Debug\EntityFramework.xml
-C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Erkin\Documents\GitHub\WebProject-01\Onixa\Onixa.Entity\obj\Debug\Onixa.Entity.csproj.CopyComplete
