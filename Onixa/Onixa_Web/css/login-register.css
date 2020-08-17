@@ -4,10 +4,7 @@ body {
     margin: 0;
     font-size: 14px;
 }
-::selection {
-    background-color: white;
-    color: #FFF;
-}
+
 
 .padding_top {
     padding-top: 100px;
