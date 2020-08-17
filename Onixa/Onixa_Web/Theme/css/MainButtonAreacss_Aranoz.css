@@ -261,9 +261,7 @@
 ::after, ::before {
   box-sizing: border-box;
 }
-.container {
-  max-width: 960px;
-}
+
 .row {
   flex-wrap: wrap;
 }
