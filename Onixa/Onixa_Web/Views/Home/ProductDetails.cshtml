@@ -2,6 +2,32 @@
 @{
     ViewBag.Title = "ProductDetails";
 }
+
+
+    <style>
+
+    
+
+        /* these styles are for the demo, but are not required for the plugin */
+        .zoom {
+            display: inline-block;
+            position: relative;
+        }
+
+          
+
+            .zoom img {
+                display: block;
+            }
+
+                .zoom img::selection {
+                    background-color: transparent;
+                }
+
+      
+    </style>
+
+
 <div class="container">           
     <ul class="breadcrumb">
         <li><a href="#">Home</a></li>
@@ -16,12 +42,16 @@
             <div class="col-lg-7 col-xl-7">
                 <div class="product_slider_img">
                     <div id="vertical">
-                        @for (int i = 0; i < 5; i++)
-                        {
-                            <div data-thumb="../img/web_img/gorsele_erisilemiyor.jpg">
-                                <img class="zoomImg" role="presentation" src="~/img/web_img/ac" />
+                        
+                            <div  id="ex1"  data-thumb="../img/web_img/gorsele_erisilemiyor.jpg">
+                                <img class='zoom' src="~/img/web_img/ac.jpg" />
                             </div>
-                        }
+                            <div id="ex1"  data-thumb="../img/web_img/gorsele_erisilemiyor.jpg">
+                                <img class='zoom' src="~/img/web_img/ac.jpg" />
+                            </div>
+                        
+                        
+
                     </div>
                 </div>
             </div>
@@ -97,9 +127,9 @@
                         <div class="btn-group">
                             <button type="button" title="Dismissible popover" class="btn btn-success btn-lg">Sepete Ekle</button>
                             <button type="button" class="btn btn-warning btn-lg">Satıcıya Danış</button>
-                            <button type="button" class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Hemen Satın Al</button>
+                            @*<button type="button" class="btn btn-primary btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Hemen Satın Al</button>*@
                         </div>
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+                        @*<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>*@
                         
                        
 
@@ -197,8 +227,14 @@
         (function($) {
             $(document).ready(function($) {
                 $('[data-toggle="popover"]').popover();
-               
+
+                
+                    $('#ex1').zoom();
+                
+                //document.getElementById("ex1").onclick= function () { $('#ex1').zoom(); alert("sdf"); };
             });
+           
+            
         })(jQuery);
        
     </script>

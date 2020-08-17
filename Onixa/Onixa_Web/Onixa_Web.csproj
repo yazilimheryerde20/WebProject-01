@@ -443,7 +443,6 @@
     <Content Include="Theme\css\themify-icons.css" />
     <Content Include="Theme\css\toolbar.css" />
     <Content Include="Theme\css\Tracking Form Area css_Aranoz.css" />
-    <Content Include="Theme\deneme.html" />
     <Content Include="Theme\fonts\Flaticon.svg" />
     <Content Include="Theme\fonts\fontawesome-webfont.svg" />
     <Content Include="Theme\fonts\glyphicons-halflings-regular.svg" />
@@ -630,7 +629,7 @@
     <Content Include="Theme\webfonts\fa-regular-400.svg" />
     <Content Include="Theme\webfonts\fa-solid-900.svg" />
     <Content Include="Theme\Ürün Detayları.html" />
-    <Content Include="Theme\Ürün Ekle.html" />
+    <Content Include="Theme\ürün ekle deneme.html" />
     <Content Include="Theme\Şifremi Unuttum.html" />
     <Content Include="Web.config" />
     <Content Include="webfonts\fa-brands-400.svg" />
@@ -723,6 +722,8 @@
     <Content Include="Views\Home\ProductDetails.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\SignUp.cshtml" />
+    <Content Include="Views\Home\Basket.cshtml" />
+    <Content Include="Views\Home\ForgotPassword.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

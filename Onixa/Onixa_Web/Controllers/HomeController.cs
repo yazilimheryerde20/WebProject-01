@@ -33,5 +33,15 @@ namespace Onixa_Web.Controllers
         {
             return View();
         }
+
+        public ActionResult Basket()
+        {
+            return View();
+        }
+
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
     }
 }
