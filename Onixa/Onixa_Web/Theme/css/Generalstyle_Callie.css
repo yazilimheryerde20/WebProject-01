@@ -30,7 +30,7 @@ a:hover, a:focus {
 }
 
 ::selection {
-  background-color: #00000063;
+  background-color: white;
   color: #FFF;
 }
 
