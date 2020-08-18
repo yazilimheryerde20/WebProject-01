@@ -40,18 +40,16 @@
     <div class="container">
         <div class="row s_product_inner justify-content-between">
             <div class="col-lg-7 col-xl-7">
-                <div class="product_slider_img">
+                <div class="product_slider_img zoom" style="position: relative; overflow: hidden;">
                     <div id="vertical">
-                        
-                            <div  id="ex1"  data-thumb="../img/web_img/gorsele_erisilemiyor.jpg">
-                                <img class='zoom' src="~/img/web_img/ac.jpg" />
+                        @for (int i = 0; i < 5; i++)
+                        {
+                            <div data-thumb="../img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg" class="yakinlastir">
+                                <img src="~/img/categories/Banyo/Banyo_dolapları/1010109.58edeb1f7577b.jpg"/>
                             </div>
-                            <div id="ex1"  data-thumb="../img/web_img/gorsele_erisilemiyor.jpg">
-                                <img class='zoom' src="~/img/web_img/ac.jpg" />
-                            </div>
+                        }
                         
                         
-
                     </div>
                 </div>
             </div>
@@ -225,13 +223,9 @@
 @section scripts{
     <script type="text/javascript">
         (function($) {
-            $(document).ready(function($) {
-                $('[data-toggle="popover"]').popover();
-
-                
-                    $('#ex1').zoom();
-                
-                //document.getElementById("ex1").onclick= function () { $('#ex1').zoom(); alert("sdf"); };
+            $(document).ready(function(){
+                $('.yakinlastir').zoom();
+                     
             });
            
             
