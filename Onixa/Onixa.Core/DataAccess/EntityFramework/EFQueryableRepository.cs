@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Onixa.Bussiness
+namespace Onixa.Core.DataAccess.EntityFramework
 {
-    public class Class1
+   public class EFQueryableRepository
     {
     }
 }

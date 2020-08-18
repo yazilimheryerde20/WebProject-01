@@ -13,7 +13,7 @@
         <EntityTypeShape EntityType="SitedbModel.Logs" Width="1.5" PointX="11.75" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.Members" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.Messages_" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="SitedbModel.MessagesReplies" Width="1.5" PointX="8.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SitedbModel.MessagesReplies" Width="1.625" PointX="8.25" PointY="11" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.Options" Width="1.5" PointX="12.75" PointY="9.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.OrderDetails" Width="1.5" PointX="7.5" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="SitedbModel.Orders" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />

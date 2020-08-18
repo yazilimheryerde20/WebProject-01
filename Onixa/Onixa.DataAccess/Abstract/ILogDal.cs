@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Onixa.DataAccess
+namespace Onixa.DataAccess.Abstract
 {
-    public class Class1
+    public interface ILogDal
     {
     }
 }
