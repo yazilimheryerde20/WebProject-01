@@ -773,3 +773,9 @@ font-size: 14px;
     line-height: 25px;
     text-transform: uppercase;
 }
+.login_part_form_iner h5{
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    margin: 0px 0px 15px;
+}

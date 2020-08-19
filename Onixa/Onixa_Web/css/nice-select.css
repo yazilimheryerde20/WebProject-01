@@ -142,6 +142,8 @@
 }
 .form-group label{
   color:black;
+ text-align:right;
+
 }
 .form-group span{
   color:black;
@@ -149,4 +151,23 @@
 }
 #footer label {
 color: #A1CD39;
+}
+.post.checkbox.f-option a{
+  color:black;
+}
+
+
+.form-group label {
+    color: black;
+    text-align: right;
+}
+label {
+    display:inline; 
+    max-width: 100%;
+
+    font-weight: 700;
+}
+
+.form-group label a{
+  color:#A1CD39;
 }

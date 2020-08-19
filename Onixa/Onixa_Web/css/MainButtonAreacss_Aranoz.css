@@ -215,7 +215,7 @@
   font-size: 26px;
   line-height: 36px;
   font-weight: 700;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .p_star {
   display: inline-block;
@@ -225,6 +225,7 @@
   border: 0px solid transparent;
   border-bottom: 1px solid #dddddd;
   border-radius: 0;
+
 }
 .form-control {
   display: block;
