@@ -15,8 +15,6 @@ namespace Onixa_Web.Controllers
         public BaseController(ICategoryService categoryService)
         {
 
-          
-
             var categoryModel = new CategoryListViewModel
             {
                 Categorieses = categoryService.GetAll()

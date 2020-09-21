@@ -68,6 +68,7 @@
     <Compile Include="Abstract\IProductDetailDal.cs" />
     <Compile Include="Abstract\IProjectDal.cs" />
     <Compile Include="Abstract\IRoleDal.cs" />
+    <Compile Include="Abstract\IStyleDal.cs" />
     <Compile Include="Abstract\ISysdiagramDal.cs" />
     <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Abstract\IUsers_RolesDal.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Concrete\EntityFramework\EFProductDetailDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFProjectDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFRoleDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EFStyleDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFSysdiagramDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFUserDal.cs" />
     <Compile Include="Concrete\EntityFramework\EFUsers_RolesDal.cs" />

@@ -1,6 +1,7 @@
-﻿
+﻿@model Onixa_Web.Models.ProductListViewModel
 @{
     ViewBag.Title = "ProductDetails";
+  
 }
 
 
@@ -53,7 +54,7 @@
             </div>
             <div class="col-lg-5 col-xl-4">
                 <div class="s_product_text">
-                    <h3>Faded SkyBlu Denim Jeans</h3>
+                    <h3>@Model.Product.Name</h3>
                     <ul class="list">
                         <!--<li>
                             <span class="fiyat" >₺400</span>

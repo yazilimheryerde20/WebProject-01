@@ -1,0 +1,65 @@
+﻿@model Onixa_Web.Models.ProductListViewModel
+<div class="product-filter">
+    <div class="row">
+
+        <div class="col-lg-3 col-md-5 col-sm-12">
+            <h5 class="yazi-stili">Stil:</h5>
+
+
+            <select class="wide nice-select small">
+                <option value="">Seçiniz</option>
+                @foreach (var style in Model.Styleses)
+                {
+                    <option value="@style.Id">@style.Name</option>
+                }
+
+            </select>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12">
+
+
+            <h5 class="yazi-stili">Kategori:</h5>
+            <select class="wide nice-select small">
+                <option value="">Furniture</option>
+                <option value="">Bathroom</option>
+                <option value="">Childroom</option>
+                <option value="">Decoration</option>
+                <option value="">Lighting</option>
+                <option value="">Other Models</option>
+                <option value="">Textures</option>
+                <option value="">Kitchen</option>
+                <option value="">Technology</option>
+                <option value="">Architecture</option>
+                <option value="">Scripts</option>
+                <option value="">Plants</option>
+            </select>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12">
+
+            <h5 class="yazi-stili">Alt Başlık:</h5>
+
+            <select class="wide nice-select small">
+                <option value="">Dressing table</option>
+                <option value="">Rack</option>
+                <option value="">3D Panel</option>
+            </select>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12">
+
+            <h5 class="yazi-stili">Sırala:</h5>
+
+            <select class="wide nice-select small">
+                <option value="0">Seçiniz</option>
+                <option value="1">Eklenme Tarihine Göre</option>
+                <option value="2">En Çok Tercih Edilene Göre</option>
+                <option value="3">En Çok Satana Göre</option>
+                <option value="4">Ürün İsmine Göre ( A-Z )</option>
+                <option value="5">Ürün İsmine Göre ( Z-A )</option>
+                <option value="6">En Düşük Fiyata Göre</option>
+                <option value="7">En Yüksek Fiyat Göre</option>
+            </select>
+        </div>
+
+    </div>
+
+</div>

@@ -9,8 +9,11 @@ namespace Onixa.Bussiness.Abstact
 {
    public interface IProductService
     {
-        List<Products> GelAll();
-        Products GetById(int id);
+        List<Products> GetAll();
+        List<Products> GetbyCategoryIdAll(int? id);
+        List<Styles> GetAllStyles();
+        Products GetByParentId(int id);
+        Products GetByCategoryId(int? id);
         Products Add(Products products);
         Products Update(Products products);
         void Delete(Products products);

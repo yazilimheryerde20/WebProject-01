@@ -462,6 +462,7 @@
       <End Role="Categories" EntitySet="Categories" />
       <End Role="Products" EntitySet="Products" />
     </AssociationSet>
+    <EntitySet Name="Styles" EntityType="SitedbModel.Styles" />
   </EntityContainer>
   <EntityType Name="Orders">
     <Key>
@@ -662,4 +663,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="Styles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

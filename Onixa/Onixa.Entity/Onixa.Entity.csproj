@@ -120,6 +120,9 @@
     <Compile Include="Role.cs">
       <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Styles.cs">
+      <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>OnixaSiteDBModel.tt</DependentUpon>
     </Compile>

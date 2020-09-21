@@ -46,5 +46,6 @@ namespace Onixa.Entity
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<Categories> Categories { get; set; }
+        public virtual DbSet<Styles> Styles { get; set; }
     }
 }

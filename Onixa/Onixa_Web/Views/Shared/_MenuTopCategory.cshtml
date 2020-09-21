@@ -18,7 +18,7 @@
             <ul class="dropdown-list">
                 @foreach (var downtitle in altbaslik)
                 {
-                    <li><a href="@Url.Action("index","Home")">@downtitle.Name_</a></li>
+                    <li><a href="@Url.Action("index","Home",new {id=@downtitle.Category_Id})">@downtitle.Name_</a></li>
                 }
 
             </ul>

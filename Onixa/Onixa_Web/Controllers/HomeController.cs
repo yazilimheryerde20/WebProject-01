@@ -21,32 +21,49 @@ namespace Onixa_Web.Controllers
 
         // GET: Home
 
-        public ActionResult Index()
+        public ActionResult Index(int? id)
         {
-         
-            var model = new ProductListViewModel
+            var model= new ProductListViewModel();
+           
+            if (id.HasValue)
             {
-                Products = _productService.GelAll()
-            };
+                model.Products = _productService.GetbyCategoryIdAll(id);
+            }
+            else
+            {
+                model.Products = _productService.GetAll();
+            }
+
+            model.Styleses = _productService.GetAllStyles();
+          //var  model = new ProductListViewModel
+          //  {
+               
+          //      Products = _productService.GelAll(),
+          //      Styleses = _productService.GelAllStyles()
+                
+          //  };
             return View(model);
         }
 
         
-        public ActionResult ProductDetails()
+        public ActionResult ProductDetails(int? id)
         {
-            return View();
+            var model = new ProductListViewModel();
+            if (id.HasValue)
+            {
+                model.Product = _productService.GetByCategoryId(id);
+                return View(model);
+            }
+            else
+            {
+                return Index(null);
+
+            }
+
+           
         }
 
-        public ActionResult Login()
-        {
-            return View();
-        }
-
-        public ActionResult SignUp()
-        {
-            return View();
-        }
-
+      
         public ActionResult Exit()
         {
             return View();
@@ -62,17 +79,6 @@ namespace Onixa_Web.Controllers
             return View();
         }
 
-        //public string deneme()
-        //{
-        // AddressManager addressManager=new AddressManager(new EFAddressDal());
-        // addressManager.Add(new Address
-        // {
-        //    Name="sadd",
-        //    Description = "sdfsdf",
-        //    Member_Id=1,
-        //    UserBy = "fgfgf"
-        // });
-        //    return "sada";
-        //}
+       
     }
 }

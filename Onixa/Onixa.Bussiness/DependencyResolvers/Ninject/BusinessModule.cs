@@ -19,11 +19,12 @@ namespace Onixa.Bussiness.DependencyResolvers.Ninject
         public override void Load()
         {
             Bind<IAddressService>().To<AddressManager>().InSingletonScope();
-            Bind<IAddressDal>().To<EFAddressDal>();
+            Bind<IAddressDal>().To<EFAddressDal>().InSingletonScope();
             Bind<IProductService>().To<ProductManager>().InSingletonScope();
-            Bind<IProductDal>().To<EFProductDal>();
+            Bind<IProductDal>().To<EFProductDal>().InSingletonScope(); ;
             Bind<ICategoryService>().To<CategoryManager>().InSingletonScope();
-            Bind<ICategoryDal>().To<EFCategoryDal>();
+            Bind<ICategoryDal>().To<EFCategoryDal>().InSingletonScope();
+            Bind<IStyleDal>().To<EFStyleDal>().InSingletonScope();
             //Nesne bindignleri buraya gelecek
             //Amaç; biri senden interface istiyorsa classını ver
             //Hem dal hem manager vermeyi unutma!
