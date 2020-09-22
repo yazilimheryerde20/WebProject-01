@@ -28,5 +28,10 @@ namespace Onixa_Web.Controllers
         {
             return View();
         }
+
+        public ActionResult myOrders()
+        {
+            return View();
+        }
     }
 }

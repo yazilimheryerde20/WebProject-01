@@ -31,6 +31,7 @@ namespace Onixa_Web.Controllers
             }
             else
             {
+               
                 model.Products = _productService.GetAll();
             }
 
