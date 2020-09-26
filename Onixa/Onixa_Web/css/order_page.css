@@ -217,12 +217,7 @@
             border-style: inset;
             border-image: initial;
         }
-        body {
-            font-family: Helvetica Neue,sans-serif;
-            font-size: 15px;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+     
         .main__container__tool .tool__search__clearicon {
             position: absolute;
             padding: 12px;
@@ -1038,7 +1033,10 @@ a:hover, a:focus {
 body {
     font-family: "Poppins", sans-serif !important;
     font-size: 16px !important;
-    color: black!important;
+    color: black !important;
     font-weight: 400 !important;
     overflow-x: hidden !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
 }
+
