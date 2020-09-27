@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Web;
 using System.Web.Mvc;
 using Onixa.Bussiness.Abstact;
@@ -14,9 +15,11 @@ namespace Onixa_Web.Controllers
     public class HomeController : BaseController
     {
         private IProductService _productService;
+        private ICategoryService _categoryService;
         public HomeController(IProductService productService, ICategoryService categoryService) : base(categoryService)
         {
             _productService = productService;
+            _categoryService = categoryService;
         }
 
         // GET: Home
@@ -55,7 +58,7 @@ namespace Onixa_Web.Controllers
             if (id.HasValue)
             {
 
-                model.Productimage = _productService.GetProductsImageNamesListbyProductId(id);
+                model.Productimage = _productService.GetProductsImageListbyProductId(id);
                 return View(model);
             }
             else
@@ -82,7 +85,14 @@ namespace Onixa_Web.Controllers
         {
             return View();
         }
-
+        [HttpPost]
+        public JsonResult CategoryDownTitle(int id)
+        {
+            var category = _categoryService.GetByParentId(id);
+            List<SelectListItem> item = (from c in category
+                select new SelectListItem {Value = c.Category_Id.ToString(), Text = c.Name_}).ToList();
+            return Json(item,JsonRequestBehavior.AllowGet);
+        }
        
     }
 }

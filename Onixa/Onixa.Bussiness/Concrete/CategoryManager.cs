@@ -38,7 +38,12 @@ namespace Onixa.Bussiness.Concrete
             return _categoryDal.GetList(x => x.Category_Id == id);
         }
 
-        public List<Categories> GetByParentId()
+        public List<Categories> GetByParentId(int id)
+        {
+            return _categoryDal.GetAllList(x => x.ParentID == id).ToList();
+        }
+
+        public List<Categories> GetByParentIdNull()
         {
             
             return _categoryDal.GetAllList(x => x.ParentID == null).ToList();

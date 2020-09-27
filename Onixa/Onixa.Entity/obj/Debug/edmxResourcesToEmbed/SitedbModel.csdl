@@ -196,6 +196,7 @@
     <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Product_Id" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Products" Relationship="Self.FK_ProductDetails_Products" FromRole="ProductDetails" ToRole="Products" />
+    <Property Name="Color" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
   </EntityType>
   <EntityType Name="Products">
     <Key>

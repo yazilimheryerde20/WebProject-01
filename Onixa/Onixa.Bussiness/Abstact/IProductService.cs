@@ -14,8 +14,8 @@ namespace Onixa.Bussiness.Abstact
         List<Products> GetbyCategoryIdAll(int? id);
         List<Styles> GetAllStyles();
         Products GetByParentId(int id);
-       List<Productimages>  GetProductsImageNamesListbyProductId(int? id);
-        List<Productimages> GetProductimagesesAll();
+       List<Productimages>  GetProductsImageListbyProductId(int? id);
+     
         List<ProductsLite> GetProductIndexList();
         List<ProductsLite> GetProductIndexListbyCategoryID(int? id);
         Products Add(Products products);

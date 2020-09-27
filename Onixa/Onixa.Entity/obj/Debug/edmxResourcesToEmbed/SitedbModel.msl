@@ -170,6 +170,7 @@
     <EntitySetMapping Name="ProductDetails">
       <EntityTypeMapping TypeName="SitedbModel.ProductDetails">
         <MappingFragment StoreEntitySet="ProductDetails">
+          <ScalarProperty Name="Color" ColumnName="Color" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Platform" ColumnName="Platform" />
           <ScalarProperty Name="Size" ColumnName="Size" />

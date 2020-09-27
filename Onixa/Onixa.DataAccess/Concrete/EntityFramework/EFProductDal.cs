@@ -41,38 +41,15 @@ namespace Onixa.DataAccess.Concrete.EntityFramework
             }
         }
 
-        public List<Productimages> GetProductsImageNamesList()
-        {
-            using (SitedbContext context=new SitedbContext())
-            {
-                var result = from urun in context.Products
-                    join resimler in context.ProductsImageName on urun.Product_Id equals resimler.Product_Id
-                    select new Productimages
-                    {
-                        AddedDate=urun.AddedDate,
-                        Category_Id = urun.Category_Id,
-                        Description = urun.Description,
-                        IsContinued=urun.IsContinued,
-                        ModifiedDate=urun.ModifiedDate,
-                        Name=urun.Name,
-                        Path = resimler.Path,
-                        Price = urun.Price,
-                        Product_Id = urun.Product_Id,
-                        StartGivenMemberCount = urun.StartGivenMemberCount,
-                        StartPoint=urun.StartPoint,
-                        UnıtInStock=urun.UnıtInStock,
-                        UserBy=urun.UserBy
-                    };
-                return result.ToList();
-            }
-        }
+        
 
         public List<Productimages> GetProductsImageNamesListbyProductId(int? id)
         {
             using (SitedbContext context = new SitedbContext())
             {
                 var result = from urun in context.Products
-                    join resim in context.ProductsImageName on urun.Product_Id equals resim.Product_Id 
+                    join resim in context.ProductsImageName on urun.Product_Id equals resim.Product_Id
+                    join urundetay in context.ProductDetails on urun.Product_Id equals urundetay.Product_Id 
                     where urun.Product_Id == id
                     
                     
@@ -80,7 +57,22 @@ namespace Onixa.DataAccess.Concrete.EntityFramework
                     {
                        Product_Id=urun.Product_Id,
                        Name=urun.Name,
-                       Path = resim.Path
+                       Path = resim.Path,
+                       AddedDate=urun.AddedDate,
+                       Category_Id=urun.Category_Id,
+                       Description=urun.Description,
+                       IsContinued=urun.IsContinued,
+                       ModifiedDate=urun.ModifiedDate,
+                       Price=urun.Price,
+                       StartGivenMemberCount=urun.StartGivenMemberCount,
+                       StartPoint=urun.StartPoint,
+                       UnıtInStock=urun.UnıtInStock,
+                       UserBy=urun.UserBy,
+                       Platform=urundetay.Platform,
+                       Product_Tag=urundetay.Product_Tag,
+                       Size=urundetay.Size,
+                       Style=urundetay.Style,
+                       Color=urundetay.Color
                        
                        
                     };

@@ -163,6 +163,7 @@
     <Property Name="Style" Type="nvarchar" MaxLength="20" />
     <Property Name="Product_Tag" Type="nvarchar" MaxLength="100" />
     <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="Color" Type="nchar" MaxLength="20" />
     <Property Name="Product_Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Products">

@@ -9,6 +9,6 @@ namespace Onixa_Web.Models
     public class CategoryListViewModel
     {
         public List<Categories> Categorieses { get; set; }
-      
+        public List<Styles> Styleses { get; set; }
     }
 }

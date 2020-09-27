@@ -1,7 +1,7 @@
 ﻿@model Onixa_Web.Models.ProductListViewModel
 @{
     ViewBag.Title = "ProductDetails";
-  
+
 }
 
 
@@ -44,27 +44,27 @@
                         @foreach (var resim in Model.Productimage.Select(x => x.Path))
                         {
                             <div data-thumb="@Url.Content("~/img/"+resim.ToString())" class="yakinlastir">
-                               <img src="~/img/@resim.ToString()" />
-                           </div>
-                       }
+                                <img src="~/img/@resim.ToString()" />
+                            </div>
+                        }
 
 
 
 
                     </div>
-                        </div>
+                </div>
             </div>
             <div class="col-lg-5 col-xl-4">
                 <div class="s_product_text">
-                    <h3>@Model.Productimage.Select(x=>x.Name).First()</h3>
+                    <h3>@Model.Productimage.Select(x => x.Name).FirstOrDefault()</h3>
                     <ul class="list">
                         <!--<li>
                             <span class="fiyat" >₺400</span>
                             <span class="kdv">+kdv dahildir</span>
                         </li>-->
                         <!--DETAYLAR!-->
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <ul class="list">
                             <!--<li>
                                 <span>PLATFORM</span> :  <a href=></a>  3dsMax2013+obj</a>
@@ -83,32 +83,32 @@
                                     <span>FORMFACTOR:</span>Rectangle
                                 </li>
                                 <li>-->
-                                <span>STYLE: </span>Modern
+                                <span>STYLE: </span>@Model.Productimage.Select(x => x.Style).FirstOrDefault()
                             </li>
                             <li>
                                 <!--<span>MATERNAL:</span>Fabric
                                 </li>
                                 <li>-->
-                                <span>COLOR: </span>In Stock
+                                <span>COLOR: </span>@Model.Productimage.Select(x => x.Color).FirstOrDefault()
                             </li>
                             <!-- <li>
                                 <span>SATICI:</span>Onixa
                             </li>-->
                         </ul>
                     </ul>
-                    <br/>
+                    <br />
                     <!--DETAYLAR FİNİSH!-->
                     <h4>Ürün Açıklaması:</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        @Model.Productimage.Select(x => x.Description).FirstOrDefault()
                     </p>
-                    <br/>
+                    <br />
                     <div class="card_area">
 
                         <form>
                             <div class="input-group">
                                 <span class="input-group-addon">Oda:</span>
-                                <input id="msg" type="ODA" class="form-control" name="msg" placeholder="">
+                                <input id="msg" type="text" class="form-control" name="msg" placeholder="">
                             </div>
                             <br />
                             <h4>Not Ekle:</h4>
@@ -124,12 +124,12 @@
                                 </select>
                             </div>
                         </form>
-                        <br/>
+                        <br />
                         <!--<div class="product_count" style="width: fit-content;">
-        <span class="inumber-decrement"> <i class="fa fa-minus"></i></span>
-        <input class="input-number" type="text" value="1" min="0" max="10">
-        <span class="number-increment"> <i class="fa fa-plus"></i></span>
-    </div>-->
+                            <span class="inumber-decrement"> <i class="fa fa-minus"></i></span>
+                            <input class="input-number" type="text" value="1" min="0" max="10">
+                            <span class="number-increment"> <i class="fa fa-plus"></i></span>
+                        </div>-->
                         <div class="btn-group">
                             <button type="button" title="Dismissible popover" class="btn btn-success btn-lg">Sepete Ekle</button>
                             <button type="button" class="btn btn-warning btn-lg">Satıcıya Danış</button>
@@ -143,10 +143,10 @@
 
 
                     </div>
-                    
+
                     <br />
                     <div class="">
-                        
+
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog modal-lg">

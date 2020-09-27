@@ -11,7 +11,6 @@ namespace Onixa.DataAccess.Abstract
 {
     public interface IProductDal : IEntityRepository<Products>
     {
-        List<Productimages> GetProductsImageNamesList();
         List<Productimages> GetProductsImageNamesListbyProductId(int? id);
         List<ProductsLite> GetProductIndexList();
         List<ProductsLite> GetProductIndexListbyCategoryID(int? id);

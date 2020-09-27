@@ -21,6 +21,7 @@ namespace Onixa.Entity
         public string Product_Tag { get; set; }
         public System.DateTime AddedDate { get; set; }
         public int Product_Id { get; set; }
+        public string Color { get; set; }
     
         public virtual Products Products { get; set; }
     }

@@ -21,5 +21,10 @@ namespace Onixa.Entity.ComplexTypes
         public Nullable<int> Category_Id { get; set; }
         public string UserBy { get; set; }
         public string Path { get; set; }
+        public string Platform { get; set; }
+        public Nullable<int> Size { get; set; }
+        public string Style { get; set; }
+        public string Product_Tag { get; set; }
+        public string Color { get; set; }
     }
 }

@@ -6,7 +6,7 @@
             <h5 class="yazi-stili">Stil:</h5>
 
 
-            <select class="wide nice-select small">
+            <select class="wide nice-select small" id="stil">
                 <option value="">Seçiniz</option>
                 @foreach (var style in Model.Styleses)
                 {
@@ -19,31 +19,31 @@
 
 
             <h5 class="yazi-stili">Kategori:</h5>
-            <select class="wide nice-select small">
-                <option value="">Furniture</option>
-                <option value="">Bathroom</option>
-                <option value="">Childroom</option>
-                <option value="">Decoration</option>
-                <option value="">Lighting</option>
-                <option value="">Other Models</option>
-                <option value="">Textures</option>
-                <option value="">Kitchen</option>
-                <option value="">Technology</option>
-                <option value="">Architecture</option>
-                <option value="">Scripts</option>
-                <option value="">Plants</option>
+            <select class="wide nice-select small" id="katgegori_ana_baslik">
+                @{
+                    var asd = (Onixa_Web.Models.CategoryListViewModel)ViewBag.MenuCategories;
+                }
+                <option value="">Seçiniz</option>
+                @foreach (var item in asd.Categorieses)
+                {
+                    if (!item.ParentID.HasValue)
+                    {
+                        <option value="@item.Category_Id">@item.Name_</option>
+                    }
+
+                }
+
             </select>
         </div>
         <div class="col-lg-3 col-md-5 col-sm-12">
 
-            <h5 class="yazi-stili">Alt Başlık:</h5>
+                <h5 class="yazi-stili">Alt Başlık:</h5>
 
-            <select class="wide nice-select small">
-                <option value="">Dressing table</option>
-                <option value="">Rack</option>
-                <option value="">3D Panel</option>
-            </select>
-        </div>
+                <select class="wide nice-select small" id="altbaslik">
+                    <option value="">Seçiniz</option>
+                  
+                </select>
+            </div>
         <div class="col-lg-3 col-md-5 col-sm-12">
 
             <h5 class="yazi-stili">Sırala:</h5>

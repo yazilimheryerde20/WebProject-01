@@ -43,7 +43,7 @@ namespace Onixa.Bussiness.Concrete
             return _styledal.GetAllList();
         }
 
-        public List<Productimages> GetProductsImageNamesListbyProductId(int? id)
+        public List<Productimages> GetProductsImageListbyProductId(int? id)
         {
             return _productDal.GetProductsImageNamesListbyProductId(id);
         }
@@ -58,16 +58,6 @@ namespace Onixa.Bussiness.Concrete
             return _productDal.GetList(x=>x.Product_Id==id);
         }
 
-        public List<Productimages> GetProductimagesesAll()
-        {
-
-           return _productDal.GetProductsImageNamesList();
-        }
-
-        public List<Productimages> GetProductimagesList()
-        {
-            return _productDal.GetProductsImageNamesList();
-        }
 
         public List<ProductsLite> GetProductIndexList()
         {

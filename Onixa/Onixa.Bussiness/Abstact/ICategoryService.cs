@@ -11,7 +11,8 @@ namespace Onixa.Bussiness.Abstact
    {
        List<Categories> GetAll();
        Categories GetById(int id);
-       List<Categories> GetByParentId();
+       List<Categories> GetByParentIdNull();
+       List<Categories> GetByParentId(int id);
         Categories Add(Categories categories);
        Categories Update(Categories categories);
 

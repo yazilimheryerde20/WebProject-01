@@ -60,3 +60,36 @@
     <div class="clearfix"></div>
 </main>
 
+@section scripts{
+    <script type="text/javascript">
+
+
+        (function ($) {
+
+            $(document).ready(function () {
+                $("#katgegori_ana_baslik").change(function () {
+                    var id = $(this).val();
+
+                    var altbaslik = $("#altbaslik");
+                    altbaslik.empty();
+                    $.ajax({
+                        url: '/Home/CategoryDownTitle',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: { 'id': id },
+                        success: function (data) {
+                            $.each(data,
+                                function (index, option) {
+                                    altbaslik.append("<option value=" + option.Value + ">" + option.Text + "</option>");
+                                   alert(" dfs="+option.text);
+                                });
+                        }
+                    });
+                });
+            });
+
+
+        })(jQuery);
+
+    </script>
+}
