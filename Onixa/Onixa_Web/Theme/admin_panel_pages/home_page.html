@@ -9,9 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-   
+  
     <title>MY SHOP</title>
-
 
     <!-- Bootstrap Core CSS -->
     <link href="../admin_panel_vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,11 +18,11 @@
     <!-- MetisMenu CSS -->
     <link href="../admin_panel_vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
+    <!-- Social Buttons CSS -->
+    <link href="../admin_panel_vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="../css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="../admin_panel_vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../admin_panel_vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -50,11 +49,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <img src="C:\Users\MELAHAT\Desktop\startbootstrap-sb-admin-2-master iş yeri\startbootstrap-sb-admin-2-master\img\logo.png" alt="" class="light-logo"></a>
+                <img src="C:\Users\MELAHAT\Desktop\startbootstrap-sb-admin-2-master iş yeri\startbootstrap-sb-admin-2-master\img\logo.png" alt="" class="light-logo"></a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="user_login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -245,22 +260,7 @@
                     <!-- /.dropdown-alerts -->
                 </li>
                 <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Kullanıcı Profili</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> AYARLAR</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> ÇIKIŞ YAP</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
+           
             </ul>
             <!-- /.navbar-top-links -->
 
@@ -278,8 +278,9 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                       
-                   
+                        <li>
+                            <a href="user_login.html"><i class="fa fa-user"></i> Giriş</a>
+                        </li>
                         <li>
                             <a href="index.html"><i class="fa fa-home"></i> Ana Sayfa</a>
                         </li>
@@ -287,7 +288,7 @@
                             <a href="tables.html"><i class="fa fa-dashboard fa-fw"></i> Genel</a>
                         </li>
                         <li>
-                            <a href="login.html"><i class="fa fa-user"></i> Giriş</a>
+                            <a href="login.html"><i class="fa fa-user"></i> Ürünlerim</a>
                         </li>
                         <li>
                             <a href="buttons.html"><i class="fa fa-check-circle"></i></i> Ürün ekle</a>
@@ -305,6 +306,9 @@
                         <li>
                             <a href="pages-error-404-yeni.html"><i class="fa fa-exclamation-triangle"></i> Error 404</a>
                         </li>
+                      
+                      
+                       
                        
                     </ul>
                 </div>
@@ -312,6 +316,7 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
+
 
         <div id="page-wrapper">
             <div class="row">
