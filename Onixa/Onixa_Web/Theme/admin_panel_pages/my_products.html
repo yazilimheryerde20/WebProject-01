@@ -9,15 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    
+  
     <title>MY SHOP</title>
-
 
     <!-- Bootstrap Core CSS -->
     <link href="../admin_panel_vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="../admin_panel_vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Social Buttons CSS -->
+    <link href="../admin_panel_vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../css/sb-admin-2.css" rel="stylesheet">
@@ -52,6 +54,22 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="user_login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -242,22 +260,7 @@
                     <!-- /.dropdown-alerts -->
                 </li>
                 <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
+           
             </ul>
             <!-- /.navbar-top-links -->
 
@@ -275,7 +278,9 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                       
+                        <li>
+                            <a href="user_login.html"><i class="fa fa-user"></i> Giriş</a>
+                        </li>
                         <li>
                             <a href="index.html"><i class="fa fa-home"></i> Ana Sayfa</a>
                         </li>
@@ -283,7 +288,7 @@
                             <a href="tables.html"><i class="fa fa-dashboard fa-fw"></i> Genel</a>
                         </li>
                         <li>
-                            <a href="login.html"><i class="fa fa-user"></i> Giriş</a>
+                            <a href="login.html"><i class="fa fa-user"></i> Ürünlerim</a>
                         </li>
                         <li>
                             <a href="buttons.html"><i class="fa fa-check-circle"></i></i> Ürün ekle</a>
@@ -301,6 +306,9 @@
                         <li>
                             <a href="pages-error-404-yeni.html"><i class="fa fa-exclamation-triangle"></i> Error 404</a>
                         </li>
+                      
+                      
+                       
                        
                     </ul>
                 </div>
@@ -309,147 +317,68 @@
             <!-- /.navbar-static-side -->
         </nav>
 
+        <!-- Page Content -->
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Notifications</h1>
+                    <h1 class="page-header">Ürünlerim</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
+         
+
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Alert Styles
+                        Foto-Sil-Güncelle
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="alert alert-success">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-info">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-warning">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-danger">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
+                            
+
+
+
+                            
+                           
+                            <div class="slideshow-container">
+                                <img src="http://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                                <br><br>
+                                <form action="/action_page.php">
+                                    <!--<label for="fname">First name:</label><br>-->
+                                    <input type="long_text" size="55"  id="fname" name="fname"> 
+                                 </form><br>
+                                 <form action="/action_page.php">
+                                    <!--<label for="fname">First name:</label><br>-->
+                                    <input type="long_text" size="55"  id="fname" name="fname"> 
+                                 </form><br>
+                                 <form action="/action_page.php">
+                                    <!--<label for="fname">First name:</label><br>-->
+                                    <input type="long_text" size="55"  id="fname" name="fname"> 
+                                 </form><br>
+                                 <form action="/action_page.php">
+                                    <!--<label for="fname">First name:</label><br>-->
+                                    <input type="long_text" size="55"  id="fname" name="fname"> 
+                                 </form><br>
+                                 <form action="/action_page.php">
+                                    <!--<label for="fname">First name:</label><br>-->
+                                    <input type="long_text" size="55"  id="fname" name="fname"> 
+                                 </form><br>
+                                 <form action="/action_page.php">
+                                    <!--<label for="fname">First name:</label><br>-->
+                                    <input type="long_text" size="55"  id="fname" name="fname"> 
+                                 </form><br>
+                                 <a href="#" class="button">Sil</a>
+                                 <a href="#" class="button2">Güncelle</a>
                         </div>
-                        <!-- .panel-body -->
+                        <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Dismissable Alerts
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="alert alert-success alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-info alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-warning alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-danger alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                        </div>
-                        <!-- .panel-body -->
-                    </div>
+                    
                     <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-6 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Modals
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- Button trigger modal -->
-                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                Launch Demo Modal
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                    <!-- /.modal-content -->
-                                </div>
-                                <!-- /.modal-dialog -->
-                            </div>
-                            <!-- /.modal -->
-                        </div>
-                        <!-- .panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Tooltips and Popovers
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <h4>Tooltip Demo</h4>
-                            <div class="tooltip-demo">
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-                            </div>
-                            <br>
-                            <h4>Clickable Popover Demo</h4>
-                            <div class="tooltip-demo">
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                                    Popover on left
-                                </button>
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                                    Popover on top
-                                </button>
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                                    Popover on bottom
-                                </button>
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                                    Popover on right
-                                </button>
-                            </div>
-                        </div>
-                        <!-- .panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-            </div>
+               
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
@@ -468,19 +397,26 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Notifications - Use for reference -->
     <script>
-    // tooltip demo
-    $('.tooltip-demo').tooltip({
-        selector: "[data-toggle=tooltip]",
-        container: "body"
-    })
-    // popover demo
-    $("[data-toggle=popover]")
-        .popover()
-    </script>
-
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Bu alandan resimlerin geçiş süresini değiştirebilirsiniz.
+        }
+        </script>
 </body>
 
 </html>

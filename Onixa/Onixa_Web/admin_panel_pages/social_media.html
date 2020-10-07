@@ -9,9 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-   
+  
     <title>MY SHOP</title>
-
 
     <!-- Bootstrap Core CSS -->
     <link href="../admin_panel_vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,11 +18,11 @@
     <!-- MetisMenu CSS -->
     <link href="../admin_panel_vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
+    <!-- Social Buttons CSS -->
+    <link href="../admin_panel_vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="../css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="../admin_panel_vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../admin_panel_vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -50,11 +49,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                 <img src="C:\Users\MELAHAT\Desktop\startbootstrap-sb-admin-2-master iş yeri\startbootstrap-sb-admin-2-master\img\logo.png" alt="" class="light-logo"></a>
+                <img src="C:\Users\MELAHAT\Desktop\startbootstrap-sb-admin-2-master iş yeri\startbootstrap-sb-admin-2-master\img\logo.png" alt="" class="light-logo"></a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="user_login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -245,22 +260,7 @@
                     <!-- /.dropdown-alerts -->
                 </li>
                 <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
+           
             </ul>
             <!-- /.navbar-top-links -->
 
@@ -278,7 +278,9 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                     
+                        <li>
+                            <a href="user_login.html"><i class="fa fa-user"></i> Giriş</a>
+                        </li>
                         <li>
                             <a href="index.html"><i class="fa fa-home"></i> Ana Sayfa</a>
                         </li>
@@ -286,7 +288,7 @@
                             <a href="tables.html"><i class="fa fa-dashboard fa-fw"></i> Genel</a>
                         </li>
                         <li>
-                            <a href="login.html"><i class="fa fa-user"></i> Giriş</a>
+                            <a href="login.html"><i class="fa fa-user"></i> Ürünlerim</a>
                         </li>
                         <li>
                             <a href="buttons.html"><i class="fa fa-check-circle"></i></i> Ürün ekle</a>
@@ -304,6 +306,9 @@
                         <li>
                             <a href="pages-error-404-yeni.html"><i class="fa fa-exclamation-triangle"></i> Error 404</a>
                         </li>
+                      
+                      
+                       
                        
                     </ul>
                 </div>
@@ -312,88 +317,56 @@
             <!-- /.navbar-static-side -->
         </nav>
 
+
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Morris.js Charts</h1>
+                    <h1 class="page-header">Sosyal Medya</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Area Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div id="morris-area-chart"></div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Bar Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div id="morris-bar-chart"></div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Line Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div id="morris-line-chart"></div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Donut Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
                 <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Morris.js Usage
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <p>Morris.js is a jQuery based charting plugin created by Olly Smith. In SB Admin, we are using the most recent version of Morris.js which includes the resize function, which makes the charts fully responsive. The documentation for Morris.js is available on their website, <a target="_blank" href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a>.</p>
-                            <a target="_blank" class="btn btn-default btn-lg btn-block" href="http://morrisjs.github.io/morris.js/">View Morris.js Documentation</a>
-                        </div>
-                        <!-- /.panel-body -->
+                         <p align="left"><b> FACEBOOK</b></p>
+                        <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a><br>
+                        <form action="text-right">
+                            <input type="text" size="30"  id="fname" name="fname">
+                            <a href="#" class="button3">Ekle</a>
+                            <a href="#" class="button3">Güncelle</a>
+                            <a href="#" class="button3">Kaydet</a>
+                          </form><br>
+                            <p align="left"><b> İNSTAGRAM</b></p>
+                        <a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a><br>
+                        <form action="text-right">
+                            <input type="text"size="30" id="fname" name="fname">
+                            <a href="#" class="button3">Ekle</a>
+                            <a href="#" class="button3">Güncelle</a>
+                            <a href="#" class="button3">Kaydet</a>
+                          </form><br>
+                           <p align="left"><b> PINTEREST</b></p>
+                        <a class="btn btn-social-icon btn-pinterest"><i class="fa fa-pinterest"></i></a><br>
+                        <form action="text-right">
+                            <input type="text"size="30" id="fname" name="fname">
+                            <a href="#" class="button3">Ekle</a>
+                            <a href="#" class="button3">Güncelle</a>
+                            <a href="#" class="button3">Kaydet</a>
+                          </form><br>
+                           <p align="left"><b> TWİTTER</b></p>
+                        <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a><br>
+                        <form action="text-right">
+                            <input type="text" size="30"id="fname" name="fname">
+                            <a href="#" class="button3">Ekle</a>
+                            <a href="#" class="button3">Güncelle</a>
+                            <a href="#" class="button3">Kaydet</a>
+                          </form><br>
                     </div>
-                    <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-6 -->
+                <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+
         </div>
         <!-- /#page-wrapper -->
 
@@ -408,11 +381,6 @@
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../admin_panel_vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="../admin_panel_vendor/raphael/raphael.min.js"></script>
-    <script src="../admin_panel_vendor/morrisjs/morris.min.js"></script>
-    <script src="../js/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../js/sb-admin-2.js"></script>
