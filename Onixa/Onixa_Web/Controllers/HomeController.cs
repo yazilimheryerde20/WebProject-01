@@ -99,20 +99,23 @@ namespace Onixa_Web.Controllers
             }
             List<BasketModel> model = new List<BasketModel>();
             List<SelectListItem> projectList = (from pr in _productService.GetProject()
-                select new SelectListItem() { Text = pr.ProjectName, Value = pr.Id.ToString() }).ToList();
+                select new SelectListItem() { Text = pr.ProjectName, Value = pr.Id.ToString()}).ToList();
             using (SitedbContext context=new SitedbContext())
             {
-                int veriler = basket.Room_Name.Count;
+                
                 foreach (KeyValuePair<int, int> item in basket.ProductsDic)
                 {
                     var pro = _productService.GetBaskets(item.Key);
-                    var deneme = item.Value;
+                    pro.Note = basket.MyBasketbyProductList.Where(x => x.MyBasket_ID == item.Key).SingleOrDefault()
+                        .Note;
+                    pro.Project_ID = basket.MyBasketbyProductList.Where(x => x.MyBasket_ID == item.Key).SingleOrDefault().Project_ID;
+                    pro.Room_Name= basket.MyBasketbyProductList.Where(x => x.MyBasket_ID == item.Key).SingleOrDefault().Room_Name;
                     if (pro!=null)
                     {
                         model.Add(new BasketModel()
                         {
                             
-                            MyBasketbyProduct=new MyBasket { Room_Name=basket.Room_Name[item.Value],MainImage=pro.MainImage,Name=pro.Name}
+                            MyBasketbyProducts= pro,ProjectList=projectList
                             
                         });
                         
@@ -151,7 +154,8 @@ namespace Onixa_Web.Controllers
             return PartialView("_ProductsList", ViewBag.Model);
 
         }
-        [HttpGet]
+
+        [HttpGet] 
         public ActionResult AddBasket(int id,string Room_Name,string Note, int Project_ID)
         {
             
@@ -159,6 +163,7 @@ namespace Onixa_Web.Controllers
             if (Session["Basket"]==null)
             {
                 basket=new BasketModel();
+               
             }
             else
             {
@@ -172,12 +177,25 @@ namespace Onixa_Web.Controllers
             else
             {
                 basket.ProductsDic.Add(id,1);
-                basket.Room_Name.Add(Room_Name);
+               basket.MyBasketbyProducts=new MyBasket{Note=Note,Project_ID=Project_ID,Room_Name=Room_Name,MyBasket_ID=id};
+                basket.MyBasketbyProductList.Add(basket.MyBasketbyProducts);
+
 
             }
 
             Session["Basket"] = basket;
             return RedirectToAction("Basket", "Home");
+        }
+
+        public ActionResult RemoveBasket(int id)
+        {
+           List<BasketModel> basket = (List<BasketModel>)Session["Basket"];
+            if (basket!=null)
+            {
+                basket.RemoveAll(x => x.MyBasketbyProducts.Product_Id == id);
+                Session["Basket"] = basket;
+            }
+            return RedirectToAction("Basket","Home");
         }
 
     }

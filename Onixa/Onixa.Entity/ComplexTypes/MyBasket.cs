@@ -8,6 +8,7 @@ namespace Onixa.Entity.ComplexTypes
 {
    public class MyBasket
     {
+        public int MyBasket_ID { get; set; }
         public int Product_Id { get; set; }
         public string Name { get; set; }
         public string MainImage { get; set; }

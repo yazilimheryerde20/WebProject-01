@@ -26,18 +26,18 @@
                                         <tr>
                                             <td>
                                                 <div class="btn-group">
-                                                    <button type="button" class="fa fa-trash fa-2x"></button>
+                                                    <a href="~/Home/RemoveBasket/@item.MyBasketbyProducts.Product_Id" class="fa fa-trash fa-2x"></a>
                                                 </div>
                                             </td>
                                             <td class="product-col">
-                                                <img src="~/img/@item.MyBasketbyProduct.MainImage" alt="@item.MyBasketbyProduct.Name">
+                                                <img src="~/img/@item.MyBasketbyProducts.MainImage" alt="@item.MyBasketbyProducts.Name">
                                                 <div class="pc-title">
-                                                    <h4>@item.MyBasketbyProduct.Name</h4>
+                                                    <h4>@item.MyBasketbyProducts.Name</h4>
 
                                                 </div>
                                             </td>
                                             <td class="project-col">
-                                               
+                                               @Html.DropDownListFor(m=>m.Select(x=>x.MyBasketbyProducts.Project_ID).FirstOrDefault().Value, new SelectList(item.ProjectList, "Value", "Text"),item.ProjectList.Where(x=>x.Value==item.MyBasketbyProducts.Project_ID.ToString()).Select(y=>y.Text).FirstOrDefault().ToString(), new { @class = "nice-select wide small", id = "ProjectName", name = "ProjectName" })
                                                 @*<div class="nice-select wide small" tabindex="0">
                                                         <span class="current">1</span>
                                                         <ul class="list">
@@ -52,7 +52,7 @@
                                             <!-- <th> <td >41mb</td></th>-->
 
                                             <td class="room-col">
-                                                <input id="msg" type="text" class="form-control" name="msg"  value="@item.MyBasketbyProduct.Room_Name">
+                                                <input id="msg" type="text" class="form-control" name="msg"  value="@item.MyBasketbyProducts.Room_Name">
                                             </td>
                                             <!-- <th><td >₺650</td> </th>-->
                                         </tr>
