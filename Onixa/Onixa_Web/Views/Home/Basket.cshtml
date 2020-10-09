@@ -21,7 +21,7 @@
                                 </thead>
 
                                 <tbody>
-                                    @foreach (var item in Model)
+                                    @foreach (Onixa_Web.Models.BasketModel item in Model)
                                     {
                                         <tr>
                                             <td>
@@ -33,12 +33,14 @@
                                                 <img src="~/img/@item.MyBasketbyProducts.MainImage" alt="@item.MyBasketbyProducts.Name">
                                                 <div class="pc-title">
                                                     <h4>@item.MyBasketbyProducts.Name</h4>
-
+                                                    
+                                                    @Html.TextAreaFor(m => item.MyBasketbyProducts.Note, new { @class = "form-control"})
                                                 </div>
                                             </td>
                                             <td class="project-col">
                                                @Html.DropDownListFor(m=>m.Select(x=>x.MyBasketbyProducts.Project_ID).FirstOrDefault().Value, new SelectList(item.ProjectList, "Value", "Text"),item.ProjectList.Where(x=>x.Value==item.MyBasketbyProducts.Project_ID.ToString()).Select(y=>y.Text).FirstOrDefault().ToString(), new { @class = "nice-select wide small", id = "ProjectName", name = "ProjectName" })
-                                                @*<div class="nice-select wide small" tabindex="0">
+                                               
+                                               @*<div class="nice-select wide small" tabindex="0">
                                                         <span class="current">1</span>
                                                         <ul class="list">
                                                             <li data-value="1" class="option selected focus">1</li>
@@ -62,7 +64,7 @@
                                 </tbody>
 
                             </table>
-                            <a href="#" class="buton">Sepeti temizle</a>
+                            <a href="~/Home/RemoveBasket/0" class="myButton">Sepeti temizle</a>
                         </div>
 
                     </div>
