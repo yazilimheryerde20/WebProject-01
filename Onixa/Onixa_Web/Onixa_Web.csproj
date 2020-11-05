@@ -186,6 +186,7 @@
     <Content Include="css\lightslider.min.css" />
     <Content Include="css\login-register.css" />
     <Content Include="css\magnific-popup.css" />
+    <Content Include="css\mail.css" />
     <Content Include="css\MainButtonAreacss_Aranoz.css" />
     <Content Include="css\Medium_Mobile_ 480px_Divisima.css" />
     <Content Include="css\Medium_Mobile_480px_Divisima.css" />
@@ -706,6 +707,10 @@
     <Content Include="Views\Account\Contact.cshtml" />
     <Content Include="Views\Account\myOrders.cshtml" />
     <Content Include="Views\Shared\_ProductsList.cshtml" />
+    <Content Include="Views\Account\Order_Mail.cshtml" />
+    <Content Include="Views\Mail\admin_order_mail_header.cshtml" />
+    <Content Include="Views\Mail\admin_order_mail_center.cshtml" />
+    <Content Include="Views\Mail\admin_order_mail_footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

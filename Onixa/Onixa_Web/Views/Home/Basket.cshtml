@@ -33,28 +33,30 @@
                                                 <img src="~/img/@item.MyBasketbyProducts.MainImage" alt="@item.MyBasketbyProducts.Name">
                                                 <div class="pc-title">
                                                     <h4>@item.MyBasketbyProducts.Name</h4>
-                                                    
-                                                    @Html.TextAreaFor(m => item.MyBasketbyProducts.Note, new { @class = "form-control"})
+
+                                                    @Html.TextAreaFor(m => item.MyBasketbyProducts.Note, new { @class = "form-control" })
                                                 </div>
                                             </td>
-                                            <td class="project-col">
-                                               @Html.DropDownListFor(m=>m.Select(x=>x.MyBasketbyProducts.Project_ID).FirstOrDefault().Value, new SelectList(item.ProjectList, "Value", "Text"),item.ProjectList.Where(x=>x.Value==item.MyBasketbyProducts.Project_ID.ToString()).Select(y=>y.Text).FirstOrDefault().ToString(), new { @class = "nice-select wide small", id = "ProjectName", name = "ProjectName" })
-                                               
-                                               @*<div class="nice-select wide small" tabindex="0">
-                                                        <span class="current">1</span>
-                                                        <ul class="list">
-                                                            <li data-value="1" class="option selected focus">1</li>
-                                                            <li data-value="2" class="option">2</li>
-                                                            <li data-value="3" class="option">3</li>
-                                                            <li data-value="4" class="option">4</li>
-                                                        </ul>
-                                                    </div>*@
-                                            </td>
+                                            <div>
+                                                <td class="project-col">
+                                                    @Html.DropDownListFor(m => m.Select(x => x.MyBasketbyProducts.Project_ID).FirstOrDefault().Value, new SelectList(item.ProjectList, "Value", "Text"), item.ProjectList.Where(x => x.Value == item.MyBasketbyProducts.Project_ID.ToString()).Select(y => y.Text).FirstOrDefault().ToString(), new { @class = "nice-select wide small", id = "ProjectName", name = "ProjectName" })
+
+                                                    @*<div class="nice-select wide small" tabindex="0">
+                                                            <span class="current">1</span>
+                                                            <ul class="list">
+                                                                <li data-value="1" class="option selected focus">1</li>
+                                                                <li data-value="2" class="option">2</li>
+                                                                <li data-value="3" class="option">3</li>
+                                                                <li data-value="4" class="option">4</li>
+                                                            </ul>
+                                                        </div>*@
+                                                </td>
+                                            </div>
 
                                             <!-- <th> <td >41mb</td></th>-->
 
                                             <td class="room-col">
-                                                <input id="msg" type="text" class="form-control" name="msg"  value="@item.MyBasketbyProducts.Room_Name">
+                                                <input id="msg" type="text" class="form-control" name="msg" value="@item.MyBasketbyProducts.Room_Name">
                                             </td>
                                             <!-- <th><td >₺650</td> </th>-->
                                         </tr>
@@ -80,7 +82,7 @@
                             </div>
                             <div class="col-lg-6">
 
-                                <a href="#" class="myButton">Siparişi tamamla</a>
+                                <a href="~/Account/OrderMailSend" class="myButton">Siparişi tamamla</a>
 
                             </div>
                         </div>
@@ -116,113 +118,17 @@
                 </div>
             </div>
         </div>
-        <!--   $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
-         $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');-->
+           @*$( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+         $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');*@
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-12">
                 <div class="best_product_slider owl-carousel">
                     <div class="product-item filter-sale">
                         <div class="product-img">
                             <img src="img/categories/Banyo/Banyo_dolapları/85635.5336d260bbc61.jpeg" alt="product">
-                            <!--<div class="product-sale">
+                            <div class="product-sale">
                                 İndirim
-                            </div>-->
-                            <div class="product-hover">
-                                <div class="product-cart">
-                                    <a class="btn btn-secondary btn-block" href="#">Sepete ekle</a>
-                                </div>
                             </div>
-                        </div>
-                        <!-- .product-img end -->
-                        <div class="product-bio">
-                            <h4>
-                                <a href="#">Titan Measures</a>
-                            </h4>
-                            <!--<p class="product-price">
-                                 <span>$40.00</span>
-                                 $32.00</p>-->
-                        </div>
-                        <!-- .product-bio end -->
-
-                    </div>
-                    <div class="product-item filter-sale">
-                        <div class="product-img">
-                            <img src="img/categories/Banyo/Banyo_dolapları/85635.5336d260bbc61.jpeg" alt="product">
-                            <!--<div class="product-sale">
-                                İndirim
-                            </div>-->
-                            <div class="product-hover">
-                                <div class="product-cart">
-                                    <a class="btn btn-secondary btn-block" href="#">Sepete ekle</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .product-img end -->
-                        <div class="product-bio">
-                            <h4>
-                                <a href="#">Titan Measures</a>
-                            </h4>
-                            <!--<p class="product-price">
-                                 <span>$40.00</span>
-                                 $32.00</p>-->
-                        </div>
-                        <!-- .product-bio end -->
-
-                    </div>
-                    <div class="product-item filter-sale">
-                        <div class="product-img">
-                            <img src="img/categories/Banyo/Banyo_dolapları/85635.5336d260bbc61.jpeg" alt="product">
-                            <!--<div class="product-sale">
-                                İndirim
-                            </div>-->
-                            <div class="product-hover">
-                                <div class="product-cart">
-                                    <a class="btn btn-secondary btn-block" href="#">Sepete ekle</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .product-img end -->
-                        <div class="product-bio">
-                            <h4>
-                                <a href="#">Titan Measures</a>
-                            </h4>
-                            <!--<p class="product-price">
-                                    <span>$40.00</span>
-                                    $32.00</p>-->
-                        </div>
-                        <!-- .product-bio end -->
-
-                    </div>
-                    <div class="product-item filter-sale">
-                        <div class="product-img">
-                            <img src="img/categories/Banyo/Banyo_dolapları/85635.5336d260bbc61.jpeg" alt="product">
-                            <!--<div class="product-sale">
-                                İndirim
-                            </div>-->
-                            <div class="product-hover">
-                                <div class="product-cart">
-                                    <a class="btn btn-secondary btn-block" href="#">Sepete ekle</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .product-img end -->
-                        <div class="product-bio">
-                            <h4>
-                                <a href="#">Titan Measures</a>
-                            </h4>
-                            <!--<p class="product-price">
-                                <span>$40.00</span>
-                                $32.00</p>-->
-                        </div>
-                        <!-- .product-bio end -->
-
-                    </div>
-                    <div class="product-item filter-sale">
-                        <div class="product-img">
-                            <img src="img/categories/Banyo/Banyo_dolapları/85635.5336d260bbc61.jpeg" alt="product">
-                            <!--<div class="product-sale">
-                                İndirim
-                            </div>-->
                             <div class="product-hover">
                                 <div class="product-cart">
                                     <a class="btn btn-secondary btn-block" href="#">Sepete ekle</a>
@@ -235,16 +141,18 @@
                                 <a href="#">Titan Measures</a>
                             </h4>
                             <p class="product-price">
-                                <!--  <span>$40.00</span>
-                                        $32.00</p>
-                                </div>
-                                <!-- product-bio end -->
-
+                                <span>$40.00</span>
+                                $32.00
+                            </p>
                         </div>
+                        <!-- .product-bio end -->
 
                     </div>
+                   
                 </div>
             </div>
+        </div>
+    </div>
 </section>
 <!-- product_list part end-->
 

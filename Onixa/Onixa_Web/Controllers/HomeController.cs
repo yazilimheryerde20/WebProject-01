@@ -92,7 +92,8 @@ namespace Onixa_Web.Controllers
         public ActionResult Basket()
         {
             List<BasketModel> model = (List<BasketModel>)Session["Basket"];
-
+            
+           
             if (model == null)
             {
                 model = new List<BasketModel>();
@@ -148,13 +149,14 @@ namespace Onixa_Web.Controllers
             {
                 List<SelectListItem> projectList = (from pr in _productService.GetProject()
                                                     select new SelectListItem() { Text = pr.ProjectName, Value = pr.Id.ToString() }).ToList();
-                var urunler = _productService.GetBaskets(id);
-                urunler.Project_ID = Project_ID;
-                urunler.Room_Name = Room_Name;
-                urunler.Note = Note;
+                var productsComplex = _productService.GetBaskets(id);
+                productsComplex.Project_ID = Project_ID;
+                productsComplex.Room_Name = Room_Name;
+                productsComplex.Note = Note;
+                
                 basket.Add(new BasketModel()
                 {
-                    MyBasketbyProducts = urunler,
+                    MyBasketbyProducts = productsComplex,
                     ProjectList = projectList
                 });
                 // basket.ProductsDic.Add(id,1);

@@ -13,15 +13,15 @@ namespace Onixa_Web.Models
        
         public BasketModel()
         {
-            this.ProductsDic=new Dictionary<int, int>();
-            this.MyBasketbyProductList=new List<MyBasket>();
+            
+           this.Productses=new List<Products>();
             
         }
-        public Dictionary<int, int> ProductsDic { get; set; }
-        public List<MyBasket> MyBasketbyProductList { get; set; }
+      
+        public List<Products> Productses { get; set; }
         public MyBasket MyBasketbyProducts { get; set; }
         public List<SelectListItem> ProjectList { get; set; }
-        public int Project_ID { get; set; }
+    
        
 
     }
